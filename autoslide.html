@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+
+<h2 class="w3-center">Zigla</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="./img/fam10.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam11.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam2.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam.PNG" style="width:100%">
+  <img class="mySlides" src="./img/srs.PNG" style="width:100%">
+  <img class="mySlides" src="./img/samed.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam7.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam8.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam3.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam6.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam9.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam5.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam12.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam13.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam14.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam7.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam7.PNG" style="width:100%">
+  <img class="mySlides" src="./img/fam7.PNG" style="width:100%">
+</div>
+<a href="index.html" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Back</a>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
